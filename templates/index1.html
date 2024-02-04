@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction</title>
+    <style>
+
+        body {
+            background-image: url('../static/images/index.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        form button[type='submit'] {
+            display: inline-block;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 200px;
+            margin-left:4px ;
+            margin-top: 200px;
+            padding: 15px 48px;
+            font-size: 14px;
+        }
+
+        .btn{
+            padding: 15px;
+            background-color: rgb(210, 192, 192);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login" align="center">
+        <b style="color:black; font-family:verdana; size:5"></b><br><br>
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="text" name="prediction_date" placeholder="Date to predict the stock value" required="required"/><br><br><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br><br><br>
+        </form>
+        <b style="color:rgba(44, 5, 107, 0.719); font-family:verdana; size: 20px;">{{ prediction_text }}</b><br><br>
+    </div>
+</body>
+</html>

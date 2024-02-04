@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        h1 {
+            display: inline-block;
+            width: 200cm;
+            margin: 1% 45%;
+        }
+        form {
+            border: 2px solid brown;
+            position: absolute;
+            top: 45%;
+            left: 40%;
+            transform: translate(0, -50%);
+            padding: 40px;
+        }
+
+        .admin {
+            color: black;
+            padding: 10px;
+            margin: 0 5px;
+            text-decoration: underline;
+        }
+
+        label {
+            font-size: 25px;
+            color: blue;
+        }
+
+        #username, #password {
+            font-size: 15px;
+            font-weight: bold;
+            color: green;
+            padding: 5px;
+            margin: 12px;
+            border: 2px solid black;
+        }
+
+        .submit {
+            position: relative;
+            top: 20px;
+            margin-left: 70px;
+            padding: 6px;
+            width: 90px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <form action="/admin/login" method="post">
+        <label for="name">Admin Name:</label><br><br>
+        <label for="" class="admin">ADMIN</label><br><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login" class="submit">
+    </form>
+</body>
+</html>

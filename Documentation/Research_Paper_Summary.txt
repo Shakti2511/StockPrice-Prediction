@@ -1,0 +1,33 @@
+Popular Machine Learning Algorithms for Stock Price Prediction
+i)  Linear Regression (LR)
+ii) Support Vector Machines(SVM)
+iii)Artificial Neural Network(ANN)
+iv) Long Short Term Memory(LSTM)
+
+**During analysis, different factors such as the complexity of historical financial data, modelperformance, prediction time horizon and economic conditions need to be considered toensuretheaccuracy and reliability of stock prediction. Therefore, it is very important to make detailedresearchand understand stock data thoroughly before selecting ML algorithms.
+
+
+A. LINEAR REGRESSION:
+
+-->i) It is a technical and quantitative measure for financial market analysis that examines two variables to determine an underlying relationship between them.
+
+ii) The output variable instockprice prediction is the stock price, and the input variables vary depending on the research topics chosen.
+
+iii) Linear regression can be used to forecast future stock prices by analyzing the relationship between these variables and the stock price. Stock prices are predicted in regression by the below linear function:
+			P = a + bX + error
+			P = stock price
+			X = independent value
+			a,b = coefficients
+
+		FOUR STEPS TO USE LINEAR REGRESSION
+I)First, collect historical stock price data, including open, high, low, and close prices for acertainperiod, and then clean the data, which may include removing missing values or classifyingthedataset to increase accuracy.
+
+II)Secondly, select input variables that have impacted stock price during chosen periods and sort out only numerical variables due to the limitation of Linear Regression model.
+
+III)Thirdly, separate the dataset into a training and testing set and use training set to fit LRalgorithmto the data.
+
+IV)Finally, calculate data metrics such as mean squared error (MSE) or R-squared to evaluatetheLR algorithm model performance on the testing set.
+
+
+B. SUPPORT VACTOR MACHINES
+--> 
